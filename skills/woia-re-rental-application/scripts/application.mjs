@@ -28,6 +28,8 @@ function values(request, rows, members) {
 }
 export function apply(state, request) {
   need(['leasing','customer-service','legal-compliance','data'].includes(request.authority?.department), 'DEPARTMENT_DENIED');
+  if(['legal-compliance','data'].includes(request.authority.department)) need(request.action==='rental-application.evidence.link','CONTRIBUTION_ONLY');
+  if(request.action?.startsWith('guarantee.')) need(request.authority.department==='leasing','COMPETENT_OWNER_REQUIRED');
   if(request.action==='rental-application.decision.record' || request.payload?.status==='ACCEPTED') need(request.authority.department==='leasing','COMPETENT_OWNER_REQUIRED');
   const context = begin(state, request, actions, 'woia-re-rental-application');
   if (context.replay) return { state: context.next, result: context.replay };
