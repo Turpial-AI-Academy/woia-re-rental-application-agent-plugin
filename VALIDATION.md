@@ -1,29 +1,7 @@
-# Validation obligations
+# Validation scope
 
-The scaffold supplies generic package/release validation and regression fixtures. Add domain-specific tests and regressions.
+Run bootstrap/doctor, mise exec -- pnpm test, mise run ci:fast. Clean exact candidate certification: Ecosystem v0.5.4 mise run plugin:certify-thin --repo <path>. Thin covers plugin/skills/payload/portable archive/domain regression. Tests are export-ignored.
 
-Capability regressions should prove bounded amendments of healthy authoritative artifacts, deep-path escalation, preservation of unrelated valid artifacts/evidence, targeted invalidation/revalidation, and independent gate ownership. Assert semantic obligations or observable behavior rather than rigid prose sentences unless exact wording is the contract. Adapt these cases to the capability; do not embed provider-specific policy in generic package validation.
+Tests cover all seven actions, access before retrieval, participant/field isolation, source writer/conflict/freshness/validity, exact competent approval, versions, submission distinct from acceptance, n-ary guarantees, revision/idempotency and unowned-field rejection.
 
-Report reusable durable execution/observation evidence, invalidated evidence, freshly established evidence, and assumptions/inferences that are not evidence. Independently inspect reused evidence and rerun affected checks plus mandatory invariants when changes invalidate it. This refinement does not reduce the formal gates below.
-
-Before first release:
-
-~~~text
-# after README.plugin.md -> README.md and placeholder replacement
-mise install
-mise run bootstrap
-# optional source diagnostic; not a release gate
-pnpm run checksums:generate
-mise run doctor
-mise run validate
-mise run test
-mise run ci:fast
-mise run ci:extended
-mise run jobs:local
-# commit candidate
-mise run release:check
-~~~
-
-Also run `skills-ref validate` for each skill when available.
-
-No placeholder token or scaffold-only `README.plugin.md` may remain in the release candidate.
+NOT_RUN: live adapters, private policy qualification, persistent concurrency, Operator E2E and release/admission. No fresh G6/G7 or Production Ready claim. Trusted assertion authenticity, atomic CAS and current revocations are caller responsibilities.
