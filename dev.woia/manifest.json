@@ -1,0 +1,14 @@
+{
+  "schema": "dev.woia.provider-manifest/v1",
+  "name": "woia-re-rental-application",
+  "capability": "rental-application",
+  "version": "0.5.0",
+  "origin": "native",
+  "authoring_profile": "thin",
+  "actions": ["rental-application.create", "rental-application.update", "rental-application.submit", "rental-application.evidence.link", "guarantee.create", "guarantee.update", "rental-application.decision.record"],
+  "support": {
+    "deterministic_contract": "implemented",
+    "storage_adapter": "NOT_QUALIFIED",
+    "external_effects": "unsupported"
+  }
+}
