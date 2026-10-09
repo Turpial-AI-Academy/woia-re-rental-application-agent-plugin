@@ -1,4 +1,4 @@
-# WOIA RE Rental Application v0.5.6
+# WOIA RE Rental Application v0.5.7
 
 Thin shared provider for versioned applications, participant/field-scoped evidence, n-ary guarantees and competent decision recording. Submission, acceptance, Lease, payment and possession remain separate facts.
 
@@ -6,7 +6,7 @@ Portable [Skill](skills/woia-re-rental-application/SKILL.md), [contract](skills/
 
 Maintenance: validate a clean exact candidate through WOIA Ecosystem `plugin:certify-thin`; repositories with local tooling also expose `ci:fast` and `release:check`.
 
-Candidate 0.5.6 is not a release. Synthetic regression is not Operator E2E or Production Ready. Maintenance validation scope is recorded in VALIDATION.md.
+Candidate 0.5.7 is not a release. Synthetic regression is not Operator E2E or Production Ready. Maintenance validation scope is recorded in VALIDATION.md.
 
 ## Maintenance
 
