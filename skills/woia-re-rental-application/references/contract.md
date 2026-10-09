@@ -1,6 +1,6 @@
 # Canonical rental contract
 
-Source: Turpial-AI-Academy/woia-real-estate at f61e057ff0edaab7c1ed8cc70dd3d5eeda82282b: docs/21, docs/22, docs/24, docs/25, docs/26, planning/w2-entry-review.json and spec-backlog. B6 authorizes implementation despite historical pre-B6 metadata. Published woia-re-domain-contracts v0.5.0 remains the logical relation home; no duplicated catalog or invented W2 hard dependency.
+Source: Turpial-AI-Academy/woia-real-estate at f61e057ff0edaab7c1ed8cc70dd3d5eeda82282b: docs/21, docs/22, docs/24, docs/25, docs/26, planning/w2-entry-review.json and spec-backlog. B6 authorizes implementation despite historical pre-B6 metadata. Published woia-re-domain-contracts v0.5.6 remains the logical relation home; no duplicated catalog or invented hard dependency.
 
 RentalApplication is property/terms context, not acceptance. ApplicationParticipant retains Subject+role. ApplicationEvidenceLink retains application+subject+document+version+purpose. Guarantee is distinct from participant role. GuaranteeCoverage preserves property+obligation scope+coverage scope+terms.
 
